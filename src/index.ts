@@ -5,7 +5,7 @@
  * @returns The processed string with vowels replaced.
  * @throws {Error} If mask is not a non-empty string.
  */
-export function muteVowels(input: string, mask: string): string {
+export function muteVowels(input: string, mask: string = '*'): string {
   if (typeof input !== 'string') {
     throw new Error('Input must be a string');
   }
@@ -24,7 +24,7 @@ export function muteVowels(input: string, mask: string): string {
  * Replaces all specified vowels in the input string with the specified mask character.
  * @param input The string to process.
  * @param mask The character to replace vowels with.
- * @param vowels The array of vowels to replace (each must be a single character string).
+ * @param vowels The array of vowels to replace (each must be a single-character string).
  * @returns The processed string with specified vowels replaced.
  * @throws {Error} If mask is not a non-empty string, or vowels is not a valid array of single-character strings.
  */
