@@ -41,3 +41,8 @@ export function muteCustomVowels(input: string, mask: string, vowels: string[]):
     })
     .join('');
 }
+
+export default {
+  muteVowels,
+  muteCustomVowels
+};
