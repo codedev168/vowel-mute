@@ -5,7 +5,7 @@
  * @returns The processed string with vowels replaced.
  * @throws {Error} If mask is not a non-empty string.
  */
-export function muteVowels(input: string, mask: string): string {
+export function muteVowels(input: string, mask: string = '*'): string {
   if (typeof input !== 'string') {
     throw new Error('Input must be a string');
   }
